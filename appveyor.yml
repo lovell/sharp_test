@@ -1,0 +1,7 @@
+install:
+  - ps: Install-Product node 12 x64
+  - npm install
+test_script:
+  - mkdir icons
+  - node index
+build: off
