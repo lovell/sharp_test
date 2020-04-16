@@ -32,8 +32,9 @@ class GenerateIcons {
     if (this.options.background) {
       image.flatten({ background: this.options.background });
     }
+    image.toFormat(this.options.convertTo)
 
-    return image.toFormat(this.options.convertTo).toFile(outputPath);
+    return image.toFile(outputPath);
   }
   /**
    * There is an issue in the way sharp processes SVGs on OSX
