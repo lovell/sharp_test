@@ -4,4 +4,8 @@ install:
 test_script:
   - mkdir icons
   - node index
+  - node index
+  - node index
+  - node index
+  - node index
 build: off
